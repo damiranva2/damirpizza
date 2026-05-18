@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <div class="nav">
@@ -17,6 +17,7 @@
             <ul>
                 <li><a href="#menu">Меню</a></li>
                 <li><a href="#onas">О нас</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
                 <li><a href="#contacts">Конаткты</a></li>
             </ul>
         </nav>
@@ -218,7 +219,56 @@
     <h1 class="onastitle">О нас</h1>
     <img src="./images/restaunrant.jpg" alt="">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel lectus a enim mollis scelerisque. Nulla luctus nisi sit amet condimentum hendrerit. Duis euismod porttitor varius. Nullam consequat a eros quis mattis. Aliquam rhoncus ornare interdum. Donec et convallis ex. Sed luctus velit sit amet condimentum luctus. Ut condimentum egestas euismod. Aenean in ligula eu leo tempus dictum ac et ante.</p>
-    <button class="btn btnreserve">Забронировать</button>
+    <button id="myBtn" class="btn btnreserve">Забронировать</button>
+    <div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <form class="reservation-form">
+  <div class="form-group">
+    <label for="fname">Имя:</label>
+    <input type="text" id="fname" name="firstname" required>
+  </div>
+
+  <div class="form-group">
+    <label for="guests">Количество гостей (макс 8):</label>
+    <input type="number" id="guests" name="guests" min="1" max="8" required>
+  </div>
+
+  <div class="form-group">
+    <label for="res-date">Дата:</label>
+    <input type="date" id="res-date" name="date" required>
+  </div>
+
+  <div class="form-group">
+    <label for="res-time">Время:</label>
+    <input type="time" id="res-time" name="time" required>
+  </div>
+
+  <button type="submit" class="submitres">Подтвердить</button>
+</form>
+
+    </div>
+
+    </div>
+</div>
+<div class="reviews" id="reviews">
+    <h1 class="reviewstitle">Отзывы</h1>
+    <div class="container">
+    <div class="mySlides">
+            <img src="./images/review1.png">
+        </div>
+
+        <div class="mySlides">
+            <img src="./images/review2.png" >
+        </div>
+
+        <div class="mySlides">
+            <img src="./images/review3.png" >
+        </div>
+            
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
 </div>
 <div class="contact" id="contacts">
     <h1 class="contacttitle">Контакты</h1>
@@ -247,6 +297,7 @@
             <ul>
                 <li><a href="#menu">Меню</a></li>
                 <li><a href="#onas">О нас</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
                 <li><a href="#contacts">Конаткты</a></li>
             </ul>
         </nav>
