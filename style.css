@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    background-image: url('./images/background.avif');
+    background-size: 100% auto; 
+    background-repeat: repeat-y; 
+    background-position: top center;
+    min-height: 100vh;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+}
+/* nav*/
+.nav {
+    display: flex;
+    align-items: center;
+    margin: 40px;
+}
+
+.logo {
+    background-color: #009919;
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+    display: block;
+    background: transparent;
+}
+
+.title-nav {
+    color: white;
+    margin-left: 20px;
+    font-size: 30px;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    margin: 40px;
+    gap: 20px;
+}
+
+.logo {
+    background-color: #009919;
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+    display: block;
+}
+
+.title-nav {
+    color: white;
+    font-size: 30px;
+    margin: 0;
+}
+
+
+.navbar {
+    margin-left: auto;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #009919;
+    text-shadow: 0 0 10px #009919;
+}
+
+.hero {
+    position: relative;
+    min-height: 700px;
+}
+
+.imghero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.imghero img {
+    width: 1300px;
+    margin-left: 800px;
+    margin-top: 100px;
+    transform: rotate(45deg);
+}
+
+.hero-content {
+    position: absolute;
+    top: 220px;
+    left: 200px;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.texthero {
+    color: white;
+    font-size: 60px;
+    max-width: 650px;
+    line-height: 1.1;
+    margin: 0;
+}
+/* меню */
+.menu-btn {
+    width: 200px;
+    height: 60px;
+    font-size: 24px;
+    border: none;
+    border-radius: 15px;
+    background: #009919;
+    color: white;
+    cursor: pointer;
+    border: #00991900 solid 2px;
+    transition: 0.3s;
+    
+}
+
+.menu-btn:hover {
+    background: transparent;
+    color: #009919;
+    border: #009919 solid 2px;
+    transition: 0.3s;
+}
+
+.texthero span {
+    color: #009919;
+}
+
+.menutitle {
+    color: #009919;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 500px;
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+}
+.js-title {
+    font-size: 36px;
+    color: #009919;
+    margin: 40px 0 20px;
+    text-align: center;
+}
+
+.jsstyle {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  border: 1px solid #009919;
+  background: #009919;
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 10px;
+  transition: background-color 0.3s ease,
+              color 0.3s ease,
+              transform 0.2s ease;
+}
+
+.tab-btn.active {
+  background: hsl(0, 0%, 0%);
+  color: #009919;
+  border: 1px solid #009919;
+  transform: scale(1.05);
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 40px;
+}
+
+.food-card {
+    width: 320px;
+    background: #009919;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.food-card:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+.food-card img {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+}
+
+.food-info {
+    padding: 20px;
+}
+
+.food-title {
+    color: #ffffff;
+    font-size: 28px;
+    margin: 0;
+}
+
+.food-price {
+    color: #ffffff;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.food-desc {
+    color: #cfcfcf;
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+/* о нас*/
+.onastitle {
+    color: #009919;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 500px;
+}
+.onas img {
+    border-radius: 30px;
+    width: 700px;
+    display: block;
+    margin: 0 auto;
+}
+.onas p {
+    color: #009919;
+    font-size: 22px;
+    line-height: 1.8;
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.btnreserve {
+    width: 200px;
+    height: 60px;
+    font-size: 24px;
+    border: none;
+    border-radius: 15px;
+    background: #009919;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin: 40px auto;
+    border: transparent 2px;
+}
+
+.btnreserve:hover {
+    background: rgba(255, 255, 255, 0);
+    color: #009919;
+    border: #009919 solid 2px;
+}
+
+.contacttitle {
+    color: #009919;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 500px;
+}
+
+
+.contact {
+    text-align: center;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.contact p {
+    color: #009919;
+    font-size: 22px;
+    line-height: 1.8;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    width: 400px;
+    margin: 0;
+}
+
+.map {
+    width: 600px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    border-radius: 20px;
+}
+
+footer {
+    background: #009919;
+    width: 100%;
+    margin-top: 150px;
+    padding: 20px 0;
+}
+
+.navcontact {
+    margin: 0 40px;
+}

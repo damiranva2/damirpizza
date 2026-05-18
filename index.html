@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="./images/pizza.png" alt="logo">
+        </div>
+        <p class="title-nav">Damir's Pizza</p>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#onas">О нас</a></li>
+                <li><a href="#contacts">Конаткты</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="hero">
+        <div class="imghero">
+            <img src="./images/heropizza.png" alt="">
+        </div>
+
+        <div class="hero-content">
+            <h1 class="texthero">
+                НАСТОЯЩЯЯ <span>ИТАЛЬЯНСКАЯ</span> ПИЦЦА ОТ ИТАЛЬЯНЦЕВ
+            </h1>
+
+            <a href="#menu">
+            <button class="btn menu-btn">Меню</button>
+            </a>
+        </div>
+    </div>
+    <div class="menu" id="menu">
+        <h1 class="menutitle">Меню</h1>
+            <div class="tabs">
+        <button class="tab-btn active" onclick="openTab(event, 'tab1')">Основное Блюда</button>
+        <button class="tab-btn" onclick="openTab(event, 'tab2')">Пицца</button>
+        <button class="tab-btn" onclick="openTab(event, 'tab3')">Салаты</button>
+        <button class="tab-btn" onclick="openTab(event, 'tab4')">Напитки</button>
+
+    </div>
+    <div id="tab1" class="tab-content active">
+    <div class="cards">
+        <div class="food-card">
+            <img src="./images/steak.png" alt="Стейк">
+            <div class="food-info">
+                <h2 class="food-title">Стейк BBQ</h2>
+                <div class="food-price">999 ₸</div>
+                <p class="food-desc">
+                    Сочный говяжий стейк с фирменным BBQ соусом.
+                </p>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="./images/carbonara.png" alt="Паста">
+            <div class="food-info">
+                <h2 class="food-title">Паста Карбонара</h2>
+                <div class="food-price">999 ₸</div>
+                <p class="food-desc">
+                    Итальянская паста с беконом и сливочным соусом.
+                </p>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="./images/burger.png" alt="Бургер">
+            <div class="food-info">
+                <h2 class="food-title">Фирменный Бургер</h2>
+                <div class="food-price">999 ₸</div>
+                <p class="food-desc">
+                    Большой бургер с котлетой, сыром и овощами.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+    </div>
+    <div id="tab2" class="tab-content">
+    <div class="cards">
+        <div class="food-card">
+            <img src="./images/pizza1.jpg" alt="">
+            <div class="food-info">
+                <h2 class="food-title">Пепперони</h2>
+                <div class="food-price">999 тг</div>
+                <p class="food-desc">
+                    Острая пепперони, тянущийся сыр моцарелла 
+                    и фирменный томатный соус.
+                </p>
+            </div>
+        </div>
+
+        <div class="food-card">
+            <img src="./images/pizza2.png" alt="">
+            <div class="food-info">
+                <h2 class="food-title">Маргарита</h2>
+                <div class="food-price">999 тг</div>
+                <p class="food-desc">
+                    Классическая итальянская пицца 
+                    с базиликом и свежими томатами.
+                </p>
+            </div>
+        </div>
+
+        <div class="food-card">
+            <img src="./images/pizza3.webp" alt="">
+            <div class="food-info">
+                <h2 class="food-title">4 Сыра</h2>
+                <div class="food-price">999 тг</div>
+                <p class="food-desc">
+                    Моцарелла, дорблю, пармезан 
+                    и сливочный сыр.
+                </p>
+            </div>
+        </div>
+
+    </div>  
+    </div>
+    <div id="tab3" class="tab-content">
+    <div class="cards">
+        <div class="food-card">
+            <img src="./images/caesar.png" alt="Цезарь">
+            <div class="food-info">
+                <h2 class="food-title">Цезарь</h2>
+                <div class="food-price">999 ₸</div>
+                <p class="food-desc">
+                    Салат с курицей, сыром и соусом Цезарь.
+                </p>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="./images/GREEK.png" alt="Греческий">
+            <div class="food-info">
+                <h2 class="food-title">Греческий</h2>
+                <div class="food-price">999 ₸</div>
+                <p class="food-desc">
+                    Свежие овощи, оливки и сыр фета.
+                </p>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="./images/vegetable.png" alt="Овощной">
+            <div class="food-info">
+                <h2 class="food-title">Овощной</h2>
+                <div class="food-price">999 ₸</div>
+                <p class="food-desc">
+                    Лёгкий салат из свежих сезонных овощей.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="tab4" class="tab-content">
+        <div class="cards">
+        <div class="food-card">
+            <img src="./images/coke.png" alt="Кола">
+            <div class="food-info">
+                <h2 class="food-title">Coca-Cola</h2>
+                <div class="food-price">999 ₸</div>
+                <p class="food-desc">
+                    Холодная Coca-Cola 0.5л.
+                </p>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="./images/mojito.png" alt="Мохито">
+            <div class="food-info">
+                <h2 class="food-title">Мохито</h2>
+                <div class="food-price">999 ₸</div>
+                <p class="food-desc">
+                    Освежающий напиток с лаймом и мятой.
+                </p>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="./images/orange.png" alt="Сок">
+            <div class="food-info">
+                <h2 class="food-title">Апельсиновый Сок</h2>
+                <div class="food-price">999 ₸</div>
+                <p class="food-desc">
+                    Натуральный апельсиновый сок со льдом.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="onas" id="onas">
+    <h1 class="onastitle">О нас</h1>
+    <img src="./images/restaunrant.jpg" alt="">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel lectus a enim mollis scelerisque. Nulla luctus nisi sit amet condimentum hendrerit. Duis euismod porttitor varius. Nullam consequat a eros quis mattis. Aliquam rhoncus ornare interdum. Donec et convallis ex. Sed luctus velit sit amet condimentum luctus. Ut condimentum egestas euismod. Aenean in ligula eu leo tempus dictum ac et ante.</p>
+    <button class="btn btnreserve">Забронировать</button>
+</div>
+<div class="contact" id="contacts">
+    <h1 class="contacttitle">Контакты</h1>
+    <div class="contact-wrapper">
+    <p><b>Наш Адрес: </b><br>Ул Достык 1 <br><br> <b>Режим Работы: </b><br> с 9:00 до 0:00 без выходных</p>
+            <div class="map">
+            <iframe 
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                style="border:0"
+                allowfullscreen=""
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBVizdQeh3udy11xDc5Ao2YStR2gLc-rfc&q=Dostyk%20Ave%201%2C%20Almaty%20050000%2C%20Kazakhstan&maptype=satellite&zoom=14">
+            </iframe>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="nav navcontact">
+        <div class="logo">
+            <img src="./images/pizza.png" alt="logo">
+        </div>
+        <p class="title-nav">Damir's Pizza</p>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#onas">О нас</a></li>
+                <li><a href="#contacts">Конаткты</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+</body>
+</html>
